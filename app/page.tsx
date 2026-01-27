@@ -64,7 +64,7 @@ export default function HeroSection() {
               <source src="/Video.mp4" type="video/mp4" />
             </video>
 
-            {/* Soft blend layer (removes hard edge look) */}
+            {/* Soft blend layer */}
             <div className="absolute inset-0 bg-[#0C0F2D]/10 pointer-events-none" />
 
             {/* Gradients */}
@@ -144,6 +144,8 @@ export default function HeroSection() {
           className="flex flex-col md:flex-row items-center gap-6 md:gap-10"
         >
           {/* Text */}
+
+          
           <div className="md:flex-1 text-center md:text-left max-w-xl">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
               About Complaint Box
@@ -160,16 +162,16 @@ export default function HeroSection() {
               Know More
             </Link>
           </div>
-
-          {/* Image - Balanced & Responsive */}
-          <div className="md:flex-1 flex justify-center md:justify-end relative w-40 sm:w-48 md:w-56 lg:w-64 aspect-[4/3] hidden sm:flex">
+{/* Image - Balanced & Responsive */}
+          <div className="md:flex-1 rounded-3xl flex justify-center md:justify-end relative w-10 h-48 sm:w-48 md:w-56 lg:w-64 aspect-[4/3] hidden sm:flex">
             <Image
               src={AboutImg}
               alt="About Complaint Box"
-              className="object-contain"
+              className="object-contain "
               fill
             />
           </div>
+          
         </motion.div>
       </section>
     </section>
