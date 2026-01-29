@@ -10,6 +10,6 @@ def create_app():
 
     @app.route("/")
     def health_check():
-        return {"status": "Backend Running"}
+        return {"status": "Backend is Running"}
 
     return app
